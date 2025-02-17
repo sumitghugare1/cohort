@@ -1,0 +1,177 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input#todo-input {
+    width: 70%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s;
+  }
+  
+  input#todo-input:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  #add-btn {
+    background-color: #28a745;
+    color: #fff;
+    margin-left: 10px;
+  }
+  
+  #add-btn:hover {
+    background-color: #218838;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  
+  li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  li button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  li button:hover {
+    background-color: #c82333;
+  }
+  
+ 
+  .dark-mode {
+    background-color: #121212;
+    color: #e4e4e4;
+  }
+  
+  .dark-mode .container {
+    background: #1e1e1e;
+    box-shadow: 0 2px 5px rgba(255, 255, 255, 0.1);
+  }
+  
+  .dark-mode input#todo-input {
+    background-color: #333;
+    color: #e4e4e4;
+    border: 1px solid #444;
+  }
+  
+  .dark-mode li {
+    border-bottom: 1px solid #444;
+  }
+  
+  .dark-mode #add-btn {
+    background-color: #218838;
+  }
+  
+ 
+  .toggle-mode {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #6486a8;
+    color: #fff;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggle-mode:hover {
+    background-color: #0b0b0c;
+  }
+  
+  .toggle-mode span {
+    margin-left: 5px;
+  }
+  
+
+
+  @media (max-width: 768px) {
+    .container {
+      margin: 50px auto;
+      padding: 15px;
+    }
+    
+    input#todo-input {
+      width: 60%;
+      font-size: 14px;
+    }
+    
+    button {
+      font-size: 14px;
+      padding: 8px 12px;
+    }
+  }
+  
+  /* For mobile devices */
+  @media (max-width: 480px) {
+    .container {
+      width: 95%;
+      margin: 20px auto;
+      padding: 10px;
+    }
+    
+    h1 {
+      font-size: 20px;
+    }
+    
+    input#todo-input {
+      width: 55%;
+      font-size: 12px;
+    }
+    
+    button {
+      font-size: 12px;
+      padding: 6px 10px;
+    }
+    
+    .toggle-mode {
+      top: 10px;
+      right: 10px;
+      padding: 6px 10px;
+    }
+  }
